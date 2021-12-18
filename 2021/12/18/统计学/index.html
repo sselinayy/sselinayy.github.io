@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="sselinayy">
+  <meta name="keywords" content="">
+  <meta name="description" content="统计学 1~5 统计定义、统计分析方法、数据类型、变量、参数、指标和标志  5~6 调查方案的设计 7~8分类数据的整理与显示（含excel教学） 9 数据的分组（数值型数据的excel图表教学） 10~11 统计数据的显示（统计表的设计）、数据分布特征的描述（集中趋势） 12 离散程度的测定，偏态，峰度 13~15 指数 16~20 时间序列分析 21~30 概率论 31~34 参数估计 区间估">
+<meta property="og:type" content="article">
+<meta property="og:title" content="统计学">
+<meta property="og:url" content="https://sselinayy.github.io/2021/12/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="统计学 1~5 统计定义、统计分析方法、数据类型、变量、参数、指标和标志  5~6 调查方案的设计 7~8分类数据的整理与显示（含excel教学） 9 数据的分组（数值型数据的excel图表教学） 10~11 统计数据的显示（统计表的设计）、数据分布特征的描述（集中趋势） 12 离散程度的测定，偏态，峰度 13~15 指数 16~20 时间序列分析 21~30 概率论 31~34 参数估计 区间估">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVPIr4.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVP5MF.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVezVS.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVmSUg.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVnAWd.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVnHXt.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TV1T1g.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TV1o9S.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TV15h8.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TV14tf.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVwKij.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVwmdg.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVwnoQ.png">
+<meta property="og:image" content="https://s4.ax1x.com/2021/12/18/TVweeS.png">
+<meta property="article:published_time" content="2021-12-18T14:58:23.673Z">
+<meta property="article:modified_time" content="2021-12-18T15:01:56.115Z">
+<meta property="article:author" content="sselinayy">
+<meta property="article:tag" content="统计">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s4.ax1x.com/2021/12/18/TVPIr4.png">
+  
+  <title>统计学 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"sselinayy.github.io","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="统计学">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-12-18 22:58" pubdate>
+        2021年12月18日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.3k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      4 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">统计学</h1>
+            
+            <div class="markdown-body">
+              <h1 id="统计学"><a href="#统计学" class="headerlink" title="统计学"></a>统计学</h1><blockquote>
+<p>1~5 统计定义、统计分析方法、数据类型、变量、参数、指标和标志</p>
+</blockquote>
+<p>5~6 调查方案的设计</p>
+<p>7~8分类数据的整理与显示（含excel教学）</p>
+<p>9 数据的分组（数值型数据的excel图表教学）</p>
+<p>10~11 统计数据的显示（统计表的设计）、数据分布特征的描述（集中趋势）</p>
+<p>12 离散程度的测定，偏态，峰度</p>
+<p>13~15 指数</p>
+<p>16~20 时间序列分析</p>
+<p>21~30 概率论</p>
+<p>31~34 参数估计 区间估计 样本容量的确定</p>
+<p>34~40 假设检验</p>
+<p>41~48 相关分析与回归分析</p>
+<p>49~50 复习 答疑*</p>
+<h1 id="统计学的产生和发展"><a href="#统计学的产生和发展" class="headerlink" title="统计学的产生和发展"></a>统计学的产生和发展</h1><h2 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a>大数定律</h2><ol>
+<li>经过大量数据吧个别的，偶尔的差异性相互抵消，使集体的必然的规律呈现出来，如男女比例1:1,多次抛币，价值规律。</li>
+</ol>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>按收集方法：观测数据与实验数据。  按时间状况：截面数据与时间序列</li>
+</ol>
+<h2 id="指标的六大要素"><a href="#指标的六大要素" class="headerlink" title="指标的六大要素"></a>指标的六大要素</h2><ul>
+<li><p>指标名称</p>
+</li>
+<li><p>时间限制</p>
+</li>
+<li><p>计算方法</p>
+</li>
+<li><p>指标数值</p>
+</li>
+<li><p>计量单位</p>
+</li>
+<li><p>空间限制</p>
+</li>
+</ul>
+<h1 id="数据分布特征和测度"><a href="#数据分布特征和测度" class="headerlink" title="数据分布特征和测度"></a>数据分布特征和测度</h1><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVPIr4"><img src="https://s4.ax1x.com/2021/12/18/TVPIr4.png" srcset="/img/loading.gif" lazyload alt="TVPIr4.png"></a></p>
+<h2 id="偏度和峰度"><a href="#偏度和峰度" class="headerlink" title="偏度和峰度#"></a>偏度和峰度#</h2><p><em>和标准正太分布相比较</em></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVP5MF"><img src="https://s4.ax1x.com/2021/12/18/TVP5MF.png" srcset="/img/loading.gif" lazyload alt="TVP5MF.png"></a></p>
+<h1 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h1><p>相对性：不同时间，不同空间</p>
+<p>综合性：不同场合下的综合变动</p>
+<p>代表性</p>
+<h2 id="指数的分类"><a href="#指数的分类" class="headerlink" title="指数的分类"></a>指数的分类</h2><p>数量（外化）质量（内涵）</p>
+<p>个体指数 总体指数（item）</p>
+<p>简单指数 加权指数</p>
+<p>动态指数 静态指数</p>
+<h2 id="编制总指数"><a href="#编制总指数" class="headerlink" title="编制总指数"></a>编制总指数</h2><p><em>最好先对比再综合，同度量</em></p>
+<ul>
+<li>加权综合指数</li>
+<li>加权平均指数</li>
+</ul>
+<h2 id="权数的确定"><a href="#权数的确定" class="headerlink" title="权数的确定"></a>权数的确定</h2><ul>
+<li><p>数量 质量</p>
+</li>
+<li><p>质量 物量</p>
+</li>
+<li><p>基期和报告期</p>
+</li>
+<li><p>总量 比重</p>
+</li>
+<li><p>基期加权，报告期加权，交叉加权，固定加权，几何平均</p>
+</li>
+</ul>
+<h2 id="拉式指数："><a href="#拉式指数：" class="headerlink" title="拉式指数：##"></a>拉式指数：##</h2><p><em>基期</em></p>
+<p>指数时间序列</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVezVS"><img src="https://s4.ax1x.com/2021/12/18/TVezVS.png" srcset="/img/loading.gif" lazyload alt="TVezVS.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVmSUg"><img src="https://s4.ax1x.com/2021/12/18/TVmSUg.png" srcset="/img/loading.gif" lazyload alt="TVmSUg.png"></a></p>
+<h2 id="帕式指数"><a href="#帕式指数" class="headerlink" title="帕式指数"></a>帕式指数</h2><ul>
+<li>经济意义 *</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVnAWd"><img src="https://s4.ax1x.com/2021/12/18/TVnAWd.png" srcset="/img/loading.gif" lazyload alt="TVnAWd.png"></a></p>
+<h2 id="加权综合指数体系的因素分析"><a href="#加权综合指数体系的因素分析" class="headerlink" title="加权综合指数体系的因素分析"></a>加权综合指数体系的因素分析</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVnHXt"><img src="https://s4.ax1x.com/2021/12/18/TVnHXt.png" srcset="/img/loading.gif" lazyload alt="TVnHXt.png"></a></p>
+<p>#离散型随机变量及其分布</p>
+<h2 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h2><blockquote>
+<p>中心极限定理告诉我们：不论x变量是连续型还是离散型，也无论x服从何种分布，一般只要n＞30，就可认为的分布是正态的。</p>
+</blockquote>
+<h1 id="分布类型"><a href="#分布类型" class="headerlink" title="分布类型"></a>分布类型</h1><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TV1T1g"><img src="https://s4.ax1x.com/2021/12/18/TV1T1g.png" srcset="/img/loading.gif" lazyload alt="TV1T1g.png"></a></p>
+<h2 id="Z分布"><a href="#Z分布" class="headerlink" title="Z分布"></a>Z分布</h2><ul>
+<li>当讨论两个总体的均值是否相等时采用此方法</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TV1o9S"><img src="https://s4.ax1x.com/2021/12/18/TV1o9S.png" srcset="/img/loading.gif" lazyload alt="TV1o9S.png"></a></p>
+<ul>
+<li><p>用途：1.推断或估计总体的成数。例如某项改革方案工人的支持率，产品的正品率等</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TV15h8"><img src="https://s4.ax1x.com/2021/12/18/TV15h8.png" srcset="/img/loading.gif" lazyload alt="TV15h8.png"></a></p>
+</li>
+<li><p>比较两个总体的成数。比如,比较两个企业的同类产品的市场占有率,比较新旧工艺生产出的产品废品率是否有显著性差异。</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TV14tf"><img src="https://s4.ax1x.com/2021/12/18/TV14tf.png" srcset="/img/loading.gif" lazyload alt="TV14tf.png"></a></p>
+<h1 id="卡方分布"><a href="#卡方分布" class="headerlink" title="卡方分布"></a>卡方分布</h1><p><em>用途讨论某种工艺的产品质量是否稳定，是估计总体方差的问题，对总体的方差进行估计时，必须利用样本的方差</em></p>
+<h1 id="t分布"><a href="#t分布" class="headerlink" title="t分布"></a>t分布</h1><p>*总体方差未知 *</p>
+<p>#F分布#</p>
+<p>两个总体方差是否相等?</p>
+<blockquote>
+<p>对于总体的被估计指标X，找出样本的两个估计量x1和x2，使被估计指标X落在区间（x1，x2）内的概率1-α，（0&lt;α&lt;1），为已知的。即P（x≤X≤x)=1一α是给定的。我们称区间（ x1，x2 ）为总体指标X的置信区间，其估计置信度为1一α，称α为显著性水平，x1是置信下限，x2是置信上限。<br>置信区间包含总体参数真值的次数所占的比例称为置信水平（1- a）%</p>
+</blockquote>
+<p> 例如:为了估计总体的平均值，我们抽取了100个样本，必然能得到100个区间，置信水平a说的是在这100个区间&gt;&gt;中，包含总体平均值的区间有(1-a）%，有a%不包含总体平均值！</p>
+<ul>
+<li>1.所以并不是所有的置信区间都包括待估计的总体参数！</li>
+<li>2.<br>所以置信区间是一个随机区间,表示为 (1 - a)为是总体参数未在区间内的比例，a叫显著性水平<br>常用的置信水平值有 99%, 95%, 90%<br>相应的a为0.01，0.05，0.10</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVwKij"><img src="https://s4.ax1x.com/2021/12/18/TVwKij.png" srcset="/img/loading.gif" lazyload alt="TVwKij.png"></a></p>
+<h2 id="区间估计单总体"><a href="#区间估计单总体" class="headerlink" title="区间估计单总体"></a>区间估计单总体</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVwmdg"><img src="https://s4.ax1x.com/2021/12/18/TVwmdg.png" srcset="/img/loading.gif" lazyload alt="TVwmdg.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVwnoQ"><img src="https://s4.ax1x.com/2021/12/18/TVwnoQ.png" srcset="/img/loading.gif" lazyload alt="TVwnoQ.png"></a></p>
+<p>#区间估计双总体#</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/TVweeS"><img src="https://s4.ax1x.com/2021/12/18/TVweeS.png" srcset="/img/loading.gif" lazyload alt="TVweeS.png"></a></p>
+<h1 id="样本容量的确定"><a href="#样本容量的确定" class="headerlink" title="样本容量的确定"></a>样本容量的确定</h1><pre><code>样本容量n与总体方差、边际误差E、可靠性系数Z或t之间的关系为
+与总体方差成正比
+与边际误差成反比
+与可靠性系数成正比
+</code></pre>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%BB%9F%E8%AE%A1/">统计</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/12/18/SQL%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/">
+                        <span class="hidden-mobile">sql进阶</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
